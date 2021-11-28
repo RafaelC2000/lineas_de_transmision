@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lineas de Transmisión</title>
+</head>
+<body>
+    <section class="selectors">
+        <div class="type-of-line">
+            <label for="line">Línea de Transmisión tipo:</label>
+            <select name="line-of-transmition" id="line">
+                <option value="microcinta">Microcinta</option>
+                <option value="coaxiales">Cables Coaxiales</option>
+                <option value="bifiliar">Línea Bifiliar</option>
+            </select>
+        </div>
+        <div class="dielectric">
+            <label for="dielectric">Dieléctrico:</label>
+            <select name="dielectric" id="dielectric">
+                <option value="fr4">FR4 <span>4.2εr</span></option>
+                <option value="f_glass">Vidrio <span>4.7εr</span></option>
+                <option value="pvc">PVC <span>4εr</span></option>
+                <option value="duroid">Duroid <span>2.2εr</span></option>
+                <option value="mylar">Mylar <span>3.2εr</span></option>
+                <option value="polyethylene">Polietileno <span>2.26εr</span></option>
+                <option value="polystyrene">Poliestireno <span>2.56εr</span></option>
+            </select>
+        </div>
+        <div class="conductive">
+            <label for="conductive">Conductor:</label>
+            <select name="conductive" id="conductive">
+                <option value="silver">Plata <span>1μr</span><span>6.17x10^<sup>7</sup>σc</span></option>
+                <option value="gold">Oro <span>1μr</span><span>4.10x10^<sup>7</sup>σc</span></option>
+                <option value="aluminium">Aluminio <span>1μr</span><span>3.82x10^<sup>7</sup>σc</span></option>
+                <option value="iron">Fierro <span>200μr</span><span>1.03x10^<sup>7</sup>σc</span></option>
+                <option value="nickel">Niquel <span>100μr</span><span>1.45x10^<sup>7</sup>σc</span></option>
+                <option value="brass">Latón <span>1μr</span><span>1.50x10^<sup>7</sup>σc</span></option>
+                <option value="zinc">Zinc <span>1μr</span><span>1.67x10^<sup>7</sup>σc</span></option>
+                <option value="tungsten">Tungsteno <span>1μr</span><span>1.82x10^<sup>7</sup>σc</span></option>
+                <option value="copper">Cobre <span>1μr</span><span>5.80x10^<sup>7</sup>σc</span></option>
+            </select>
+        </div>
+        <div class="method">
+            <p>Calcular la impedancia característica.</p>
+            <button id="calc_impedance">Seleccionar</button>
+            <p>Calcular las dimensiones.</p>
+            <button id="calc_dimensions">Seleccionar</button>
+        </div>
+    </section>
+    <hr>
+    <section class="form"></section>
+    <script src="./app.js"></script>
+</body>
+</html>
