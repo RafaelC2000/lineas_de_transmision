@@ -8,6 +8,9 @@
     <title>Lineas de Transmisión</title>
 </head>
 <body>
+    <div class="disclaim">
+        <p>&#x26a0; Para lineas de transmisión sin perdidas. &#x26a0;</p>
+    </div>
     <section class="selectors">
         <form action="">
             <div class="type-of-line">
@@ -21,14 +24,16 @@
             <div class="dielectric">
                 <label for="dielectric">Dieléctrico:</label>
                 <select name="dielectric" id="dielectric">
-                    <option value="fr4">FR4 <span>4.2εr</span></option>
-                    <option value="f_glass">Vidrio <span>4.7εr</span></option>
-                    <option value="pvc">PVC <span>4εr</span></option>
-                    <option value="duroid">Duroid <span>2.2εr</span></option>
-                    <option value="mylar">Mylar <span>3.2εr</span></option>
-                    <option value="polyethylene">Polietileno <span>2.26εr</span></option>
-                    <option value="polystyrene">Poliestireno <span>2.56εr</span></option>
+                    <option value="4.2">FR4 <span>4.2εr</span></option>
+                    <option value="4.7">Vidrio <span>4.7εr</span></option>
+                    <option value="4">PVC <span>4εr</span></option>
+                    <option value="2.2">Duroid <span>2.2εr</span></option>
+                    <option value="3.2">Mylar <span>3.2εr</span></option>
+                    <option value="2.26">Polietileno <span>2.26εr</span></option>
+                    <option value="2.56">Poliestireno <span>2.56εr</span></option>
+                    <option value="otro">Otro</option> 
                 </select>
+                <span><input type="text" id="otro"></span><span>ε<sub>r</sub></span>
             </div>
             <div class="conductive">
                 <label for="conductive">Conductor:</label>
@@ -42,7 +47,9 @@
                     <option value="zinc">Zinc <span>1μr</span><span>1.67x10^<sup>7</sup>σc</span></option>
                     <option value="tungsten">Tungsteno <span>1μr</span><span>1.82x10^<sup>7</sup>σc</span></option>
                     <option value="copper">Cobre <span>1μr</span><span>5.80x10^<sup>7</sup>σc</span></option>
+                    <option value="otro">Otro</option>
                 </select>
+                <span><input type="text" id="otroC"></span><span>μ<sub>r</sub></span>
             </div>
             <div class="method">
                 <p>Calcular la impedancia característica.</p>
@@ -51,10 +58,12 @@
                 <button type="button" id="calc_dimensions">Seleccionar</button>
             </div>
             </form>
-    </section>
-    <hr>
+    </section>  
     <section class="form"></section>
-    <section class="results"></section>
+    <section class="results">
+        <div class="result"></div>
+        <div class="image"></div>
+    </section>
     <script src="./app.js"></script>
 </body>
 </html>

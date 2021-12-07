@@ -1,3 +1,18 @@
-.no-display{
-    display: none;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.disclaim{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
+}
+.disclaim p{
+    display: block;
+    width: 300px;
+    text-align: center;
+    border: 1px solid black;
 }
