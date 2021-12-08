@@ -103,11 +103,14 @@ function addFieldMicro(m){
     if(m==1){
         $form.innerHTML = `
         <div class="for_impedance">
-            <label for="width">Introduzca el ancho de la pista (w):</label>
-            <input type="text" id="width"><span>cm</span>
-            <br>
-            <label for="height">Introduzca el ancho del dieléctrico (h):</label>
-            <input type="text" id="height"><span>cm</span>
+            <div class="new-input">
+                <label for="width">Introduzca el ancho de la pista (w):</label>
+                <div class="sep"><input type="text" id="width"><span>cm</span></div>
+            </div>
+            <div class="new-input">
+                <label for="height">Introduzca el ancho del dieléctrico (h):</label>
+                <div class="sep"><input type="text" id="height"><span>cm</span></div>
+            </div>
         </div>
         <div class="button">
             <button id="resolve">Enviar</button>
@@ -209,11 +212,14 @@ function addFieldBifi(m){
     if(m==1){
         $form.innerHTML = `
         <div class="for_impedance">
-            <label for="dist">Introduzca la distancia entre los conductores (d):</label>
-            <input type="text" id="dist"><span>cm</span>
-            <br>
-            <label for="height">Introduzca el radio de los conductores (a):</label>
-            <input type="text" id="radius"><span>cm</span>
+            <div class="new-input">
+                <label for="dist">Introduzca la distancia entre los conductores (d):</label>
+                <div class="sep"><input type="text" id="dist"><span>cm</span></div>
+            </div>
+            <div class="new-input">
+                <label for="radius">Introduzca el radio de los conductores (a):</label>
+                <div class="sep"><input type="text" id="radius"><span>cm</span></div>
+            </div>
         </div>
         <div class="button">
             <button id="resolve">Enviar</button>
@@ -222,8 +228,10 @@ function addFieldBifi(m){
     }else if(m==2){
         $form.innerHTML = `
         <div class="for_dimensions">
-            <label for="caracteristic_impedance">Introduzca la impedancia caracteristica (Z<sub>0</sub>):</label>
-            <input type="text" id="caracteristic_impedance">
+            <div class="new-input">
+                <label for="caracteristic_impedance">Introduzca la impedancia caracteristica (Z<sub>0</sub>):</label>
+                <input type="text" id="caracteristic_impedance">
+            </div>
         </div>
         <div class="button">
             <button id="resolve2">Enviar</button>
@@ -305,11 +313,14 @@ function addFieldCoax(m){
     if(m==1){
         $form.innerHTML = `
         <div class="for_impedance">
-            <label for="radius">Introduzca el radio del conductor (a):</label>
-            <input type="text" id="radius"><span>cm</span>
-            <br>
-            <label for="radius_dielectric">Introduzca el radio del dieléctrico (d):</label>
-            <input type="text" id="radius_dielectric"><span>cm</span>
+            <div class="new-input">
+                <label for="radius">Introduzca el radio del conductor (a):</label>
+                <div class="sep"><input type="text" id="radius"><span>cm</span></div>
+            </div>
+            <div class="new-input">
+                <label for="radius_dielectric">Introduzca el radio del dieléctrico (d):</label>
+                <div class="sep"><input type="text" id="radius_dielectric"><span>cm</span></div>
+            </div>
         </div>
         <div class="button">
             <button id="resolve">Enviar</button>
@@ -318,8 +329,10 @@ function addFieldCoax(m){
     }else if(m==2){
         $form.innerHTML = `
         <div class="for_dimensions">
-            <label for="caracteristic_impedance">Introduzca la impedancia caracteristica (Z<sub>0</sub>):</label>
-            <input type="text" id="caracteristic_impedance">
+            <div class="new-input">
+                <label for="caracteristic_impedance">Introduzca la impedancia caracteristica (Z<sub>0</sub>):</label>
+                <input type="text" id="caracteristic_impedance">
+            </div>
         </div>
         <div class="button">
             <button id="resolve2">Enviar</button>
